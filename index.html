@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Web Developer</title>
 </head>
-<body>
+<style>
+    body {
+        font-family: poppins, sans-serif;
+    }
+    table {
+        width: 30%;
+        border: 0;
+    }
+    table tr td a {
+        text-decoration: none;
+        color: black;
+    }
+    table tr td a:hover {
+        color: rgb(93, 93, 133);
+        background-color: lightgrey;
+    }
 
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
     <header>
-        <h1>Satria Cahya Ramadahani</h1>
+        <h1>Satria Cahya Ramadhani</h1>
         <nav>
             <table>
                 <tr>
@@ -21,11 +44,12 @@
             </table>
         </nav>
     </header>
-
+    
     <hr>
-
+    
     <section id="about">
         <h2>Tentang Saya</h2>
+        <img src="img/IMG_20250208_181806_936.webp" title="Orang Paling Ganteng" width="200" style="border-radius: 100px;">
         <p>Saya adalah seorang pengembang web dengan pengalaman dalam HTML, CSS, JavaScript, dan framework modern seperti React dan Laravel.</p>
     </section>
 
@@ -33,7 +57,7 @@
 
     <section id="skills">
         <h2>Keahlian</h2>
-        <ul>
+        <ul style="list-style: none;">
             <li>HTML & CSS</li>
             <li>JavaScript</li>
             <li>React.js</li>
@@ -78,7 +102,7 @@
     <hr>
 
     <footer>
-        <p>&copy; 2025 Nama Anda. Semua Hak Dilindungi.</p>
+        <p>&copy; 2025 Satria Ramadhani. Semua Hak Dilindungi.</p>
     </footer>
 
 </body>

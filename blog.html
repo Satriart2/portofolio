@@ -3,19 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Judul halaman</title>
 </head>
-<body>
-    <h1>Materi HTML</h1>
-    <a href="#atribute">HTML atribute</a><br>
-    <a href="#heading">HTML heading</a><br>
-    <a href="#paragraph">HTML paragraph</a><br>
-    <a href="index.html">Home</a>
+<style>
+    body {
+        font-family: poppins, sans-serif;
+        margin-left: 1rem;
+    }
+    nav div a {
+        text-decoration: none;
+        color: royalblue;
+    }
 
+    nav div a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
+
+    a {
+        text-decoration: none;
+        color: royalblue;
+    }
+
+    a:hover {
+        color: rgb(93, 163, 200);
+        background-color: rgb(255, 200, 200);
+    }
+</style>
+<body>
+    <h1 id="materi">Materi HTML</h1>
+    <nav>
+        <div>
+            <a href="#atribute">HTML atribute</a><br>
+            <a href="#heading">HTML heading</a><br>
+            <a href="#paragraph">HTML paragraph</a><br>
+            <a href="#style">HTML Style</a><br>
+            <a href="#formatting">HTML Formatting</a><br>
+            <a href="#quotation">HTML Quotation</a><br>
+            <a href="#comments">HTML Comments</a><br>
+            <a href="#color">HTML Color</a><br>
+            <a href="#css">HTML CSS</a><br>
+            <a href="#link">HTML Link</a><br>
+            <a href="#images">HTML Images</a><br>
+            <a href="#favicon">HTML Favicon</a><br>
+            <a href="#page-title">HTML Page Title</a><br>
+            <a href="#tables">HTML Tables</a><br>
+            <a href="#list">HTML List</a><br><br>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+        
+        
     <section section id="atribute">
         <h2>Atribut  HTML</h2>
         <p>1. Atribut a: <br> 
-            &lt;a href="link.html"&gt;Link&lt;/a&gt;
+            &lt;a href="link.html"&gt;Link&lt;/a&gt; <br>   
             menjadi link seperti ini <a href="link.html">Link</a>
         </p><br>
         <p>2. Atribut img: <br>
@@ -28,7 +70,9 @@
             &lt;p style="color: red;"&gt;Teks ini berwarna merah&lt;/p&gt;<br>
             menjadi teks seperti ini <p style="color: red;">Teks ini berwarna merah</p>
         </p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
         </section>
+
     <section id="heading">
         <h2>HTML Heading</h2>
         <p>Heading adalah elemen yang digunakan untuk memberikan judul pada halaman web. Ada 6 level heading dalam HTML, dari h1 hingga h6.</p>
@@ -36,19 +80,15 @@
             &lt;h1&gt;Judul Utama&lt;/h1&gt;<br>
             &lt;h2&gt;Sub Judul 1&lt;/h2&gt;<br>
             &lt;h3&gt;Sub Judul 2&lt;/h3&gt;<br>
-            &lt;h4&gt;Sub Judul 3&lt;/h4&gt;<br>
-            &lt;h5&gt;Sub Judul 4&lt;/h5&gt;<br>
-            &lt;h6&gt;Sub Judul 5&lt;/h6&gt; <br>
             menjadi heading seperti ini: <br>
         </p>
         <h1>Satria Tampan</h1>
         <h2>Sub Judul 1</h2>
         <h3>Sub Judul 2</h3>
-        <h4>Sub Judul 3</h4>
-        <h5>Sub Judul 4</h5>
-        <h6>Sub Judul 5</h6>
         <p>Heading h1 biasanya digunakan untuk judul utama halaman, sedangkan h2 hingga h6 digunakan untuk sub-judul.</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
     </section>
+
     <section id="paragraph">
         <h2>HTML Paragraph</h2>
         <p>Paragraph adalah elemen yang digunakan untuk menampilkan teks dalam bentuk paragraf. Dalam HTML, kita menggunakan tag &lt;p&gt; untuk membuat paragraf.</p>
@@ -59,6 +99,169 @@
         </p>
         <p>Ini adalah paragraf pertama.</p>
         <p>Ini adalah paragraf kedua.</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+
+    <section id="style">
+        <h2>HTML Style</h2>
+        <p>Style digunakan untuk memberikan gaya pada elemen HTML. Contoh:</p>
+        &lt;p style="color: blue; font-size: 20px;"&gt;Teks ini berwarna biru dan berukuran 20px.&lt;/p&gt; <br>
+        <p style="color: blue; font-size: 20px;">Teks ini berwarna biru dan berukuran 20px.</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="formatting">
+        <h2>HTML Formatting</h2>
+        <p>Formatting digunakan untuk menekankan teks. Contoh:</p>
+        &lt;b&gt;Teks tebal&lt;/b&gt;<br>
+        &lt;i&gt;Teks miring&lt;/i&gt;<br>
+        &lt;u&gt;Teks bergaris bawah&lt;/u&gt;<br>
+        <p><b>Teks tebal</b><br> <i>Teks miring</i><br> <u>Teks bergaris bawah</u>.</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="quotation">
+        <h2>HTML Quotation</h2>
+        <p>Quotation digunakan untuk menampilkan kutipan. Contoh:</p>
+        &lt;blockquote&gt;ini adalah kutipan.&lt;/blockquote&gt;<br>
+        <blockquote>Ini adalah kutipan.</blockquote>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="comments">
+        <h2>HTML Comments</h2>
+        <p>Komentar digunakan untuk memberikan catatan dalam kode. Contoh:</p>
+        <p>&lt;!-- Ini adalah komentar --&gt;</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="color">
+        <h2>HTML Color</h2>
+        <p>Warna dapat diterapkan menggunakan atribut style. Contoh:</p>
+        &lt;p style="color: red;"&gt;Teks ini berwarna merah.&lt;/p&gt;<br>
+        <p style="color: red;">Teks ini berwarna merah.</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="css">
+        <h2>HTML CSS</h2>
+        <p>CSS digunakan untuk mempercantik halaman web. Contoh:</p>
+        <p>&lt;style&gt;<br>
+            .example {<br>
+                color: green;<br>
+                font-size: 18px;<br>
+            }<br>
+        &lt;/style&gt;<br>
+        <style>
+            .example {
+                color: green;
+                font-size: 18px;
+            }
+        </style>
+        <p class="example">Teks ini menggunakan CSS.</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="link">
+        <h2>HTML Link</h2>
+        <p>Link digunakan untuk navigasi. Contoh:</p>
+        &lt;a href="https://www.example.com"&gt;Kunjungi Example&lt;/a&gt;<br>
+        <a href="https://www.example.com">Kunjungi Example</a>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="images">
+        <h2>HTML Images</h2>
+        <p>Gambar ditambahkan menggunakan tag &lt;img&gt;. Contoh:</p>
+        <img src="img/image.png" alt="Contoh Gambar" width="200px">
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="favicon">
+        <h2>HTML Favicon</h2>
+        <p>Favicon ditambahkan di dalam tag &lt;head&gt;. Contoh:</p>
+        <p>&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="page-title">
+        <h2>HTML Page Title</h2>
+        <p>Judul halaman ditentukan di dalam tag &lt;title&gt;. Contoh:</p>
+        <p>&lt;title&gt;Judul Halaman&lt;/title&gt;</p>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="tables">
+        <h2>HTML Tables</h2>
+        <p>Tabel digunakan untuk menampilkan data dalam bentuk tabel. Contoh:</p>
+        <p>
+            1. &lt;table&gt; untuk membuat sebuah table <br>
+            2. &lt;th&gt; untuk membuat header tabel <br>
+            3. &lt;td&gt; untuk membuat sel tabel <br>
+            4. &lt;tr&gt; untuk membuat baris tabel <br>
+        </p>
+        
+        <p>&lt;table&gt;<br>
+            &lt;tr&gt;<br>
+                &lt;th&gt;Nama&lt;/th&gt;<br>
+                &lt;th&gt;Umur&lt;/th&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+                &lt;td&gt;Satria&lt;/td&gt;<br>
+                &lt;td&gt;20&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+        <table border="1">
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+            </tr>
+            <tr>
+                <td>Satria</td>
+                <td>20</td>
+            </tr>
+        </table>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
+    </section>
+    
+    <section id="list">
+        <h2>HTML List</h2>
+        <p>List digunakan untuk menampilkan daftar. Contoh:</p>
+        <p>1. Ordered List:</p>
+        &lt;ol&gt;<br>
+            &lt;li&gt;Item 1&lt;/li&gt;<br>
+            &lt;li&gt;Item 2&lt;/li&gt;<br>
+        &lt;/ol&gt;<br>
+        <p>2. Unordered List:</p>
+        &lt;ul&gt;<br>
+            &lt;li&gt;Item A&lt;/li&gt;<br>
+            &lt;li&gt;Item B&lt;/li&gt;<br>
+        &lt;/ul&gt;<br>
+        <p>3. Other List:</p>
+        &lt;dl&gt;<br>
+            &lt;dt&gt;Definisi 1&lt;/dt&gt;<br>
+            &lt;dd&gt;Deskripsi untuk definisi 1.&lt;/dd&gt;<br>
+            &lt;dt&gt;Definisi 2&lt;/dt&gt;<br>
+            &lt;dt&gt;Deskripsi untuk definisi 2.&lt;/dd&gt;<br>
+        &lt;/dl&gt;<br>
+
+        <p>1. Ordered List:</p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+        <p>2. Unordered List:</p>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+        </ul>
+        <p>3. Other List:</p>
+        <dl>
+            <dt>Definisi 1</dt>
+            <dd>Deskripsi untuk definisi 1.</dd>
+            <dt>Definisi 2</dt>
+            <dd>Deskripsi untuk definisi 2.</dd>
+        </dl>
+        <p><a href="#materi">Kembali ke Materi HTML</a></p>
     </section>
 </body>
 </html>
