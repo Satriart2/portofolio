@@ -12,8 +12,11 @@
     <!-- end  -->
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <!-- icon-end -->
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos end -->
 </head>
 <body>
     <header>
@@ -32,16 +35,16 @@
     </header>
 
     <section class="hero-section" id="hero">
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-down" data-aos-duration="1000">
             <h1>Selamat datang di Portofolio Saya</h1>
             <p>Saya adalah seorang pengembang web yang bersemangat dan siap untuk menciptakan solusi digital yang inovatif.</p>
-            <a href="#about" class="hero-btn">Lihat</a>
+            <a href="#about" class="hero-btn" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">Lihat</a>
         </div>
     </section>
     
     <section id="about" class="about">
         <h2>Tentang Saya</h2>
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <img src="img/IMG_20250208_181806_936.webp" title="Orang Paling Ganteng" width="300"">
             <p>Saya, Satria Cahya Ramadhani, adalah pengembang web dari Politeknik Negeri Bali dengan pengalaman dalam HTML, CSS, JavaScript, serta framework modern seperti React dan Laravel. Saya terbiasa membangun website responsif, mengintegrasikan API, dan mengelola backend secara efisien untuk menciptakan solusi digital yang fungsional dan inovatif.</p>
         </div>
@@ -49,7 +52,7 @@
 
     <hr>
 
-    <section id="skills">
+    <section id="skills" class="skill">
         <h2>Keahlian</h2>
         <ul style="list-style: none;">
             <li>HTML & CSS</li>
@@ -63,7 +66,7 @@
 
     <hr>
 
-    <section id="projects">
+    <section id="projects" class="project">
         <h2>Proyek Saya</h2>
         <article>
             <h3>Proyek 1</h3>
@@ -79,17 +82,17 @@
 
     <section id="contact" class="contact">
         <h2>Kontak</h2>
-        <div class="contact-container">
+        <div class="contact-container" data-aos="fade-up" data-aos-duration="2000">
             <div class="quick-links">
                 <h3>Cari saya di:</h3>
                 <div class="social-media">
                     <a href="https://www.instagram.com/satria.rt/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
                     <a href="https://www.youtube.com/@satriart2/" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
-                    <a href="https://www.tiktok.com/@satria.rt2/"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+                    <a href="https://www.tiktok.com/@satria.rt2/" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a>
                 </div>
             </div>
 
-            <div class="form-section">
+            <div class="form-section" data-aos="fade-up" data-aos-duration="1000">
                 <h3>Hubungi Saya</h3>
                 <p>Jika Anda memiliki pertanyaan atau ingin bekerja sama, silakan isi formulir di bawah ini:</p>
                 <form class="user-form">
@@ -112,6 +115,8 @@
     <footer>
         <p>&copy; 2025 Satria Ramadhani. Semua Hak Dilindungi.</p>
     </footer>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
